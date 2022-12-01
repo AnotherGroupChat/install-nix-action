@@ -9,7 +9,7 @@ jobs:
   simple-build:
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-latest]
+        os: [ubuntu-latest, ubuntu-22.04, macos-latest]
     runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v3
@@ -25,7 +25,7 @@ jobs:
   custom-nix-path:
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-latest]
+        os: [ubuntu-latest, ubuntu-22.04, macos-latest]
     runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v3
@@ -39,7 +39,7 @@ jobs:
   extra-nix-config:
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-latest]
+        os: [ubuntu-latest, ubuntu-22.04, macos-latest]
     runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v3
@@ -55,7 +55,7 @@ jobs:
   flakes:
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-latest]
+        os: [ubuntu-latest, ubuntu-22.04, macos-latest]
     runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v3
@@ -71,7 +71,7 @@ jobs:
   installer-options:
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-latest]
+        os: [ubuntu-latest, ubuntu-22.04, macos-latest]
     runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v3
@@ -86,7 +86,7 @@ jobs:
   oldest-supported-installer:
     strategy:
         matrix:
-          os: [ubuntu-latest, macos-latest]
+          os: [ubuntu-latest, ubuntu-22.04, macos-latest]
     runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v3
@@ -100,7 +100,7 @@ jobs:
   act-support:
     strategy:
         matrix:
-          os: [ubuntu-latest]
+          os: [ubuntu-latest, ubuntu-22.04]
     runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v3
