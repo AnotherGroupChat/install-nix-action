@@ -1,4 +1,4 @@
-# install-nix-action
+# install-nix-action 
 
 ![github actions badge](https://github.com/cachix/install-nix-action/workflows/install-nix-action%20test/badge.svg)
 
